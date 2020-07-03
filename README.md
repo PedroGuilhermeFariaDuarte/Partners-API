@@ -340,7 +340,7 @@ A terceira e ultíma propriedade, representa o status da requisição seguindo o
 #### Enviando uma requisição para uma rota
 Para realizar uma requisição para a Partner API você pode usar o cliente **Insomnia**
 
-Neste repositório você encontrara um arquivo JSON (**Zé Challenger**) para importar dentro do insomnia, este json contêm as rotas e seus parametros pré-configurados.
+Neste repositório você encontrara um arquivo JSON (**partner_api_routes**) para importar dentro do insomnia, este json contêm as rotas e seus parametros pré-configurados.
 
 Caso nao queira usar o insomnia, fica a vontade para usar o cliente de sua preferencia.
 
