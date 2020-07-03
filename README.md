@@ -280,6 +280,7 @@ Por exemplo, veja o json retornado para a rota \partners\5efe73b9e30c6208b0f8875
 #### Explicando a estrutura da resposta
 
 Toda rota segue o mesmo padrão de resposta em caso de sucesso com a requisição, com essa resposta sendo um JSON com 3(trÊs) propriedades:
+
     1. Message
     2. Partner
     3. Code
@@ -288,7 +289,7 @@ A primeira propriedade **Message**, contêm uma mensagem descrevendo o sucesso d
 
 A segundo propriedade **Partner**, contêm um objeto ou um array de objetos, esses objetos representam o parceiro solitado/encontrado, veja o exemplo acima.
 
-A terceira e ultima propriedade, representa o status da requisição seguindo o padrão do protocolo HTTP, mesmo que a requisição a API tenha sido efetuado com sucesso (200) caso o conteudo solicitado não seja encontrado o codigo (Code) retornado será de 404
+A terceira e ultíma propriedade, representa o status da requisição seguindo o padrão do protocolo HTTP, mesmo que a requisição a API tenha sido efetuado com sucesso (200) caso o conteudo solicitado não seja encontrado o codigo (Code) retornado será de 404.
     
 
 
