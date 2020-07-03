@@ -4,7 +4,7 @@ Procure por um parceiro de sua preferência ou mais próximo a você.
 
 ## Sobre
 
-O Partners API foi criado para oferecer a qualquer cliente uma resposta padronizada e um acesso bem simplificado.
+O Partners API foi criado para oferecer a qualquer cliente uma resposta padronizada e acesso bem simplificado.
 
 ### Funcionalidades suportadas ###
 - Informe a sua localização
