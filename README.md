@@ -11,6 +11,15 @@ A api "Partners" foi criada  para oferecer a qualquer cliente uma resposta padro
 - Visuzalie todos os parceiros proximos a você de uma maneira extremanente rapida  
 - Procure por um parceiro em especifico
 
+### Tecnologias utilzadas ###
+- [Node.JS](https://nodejs.org/en/)
+- [Yarn](https://classic.yarnpkg.com/pt-BR/)
+- [MongoDB](https://www.mongodb.com/)
+
+### Tecnologias utilzadas como cliente para testes ###
+- [Insomnia](https://insomnia.rest/)
+
+
 # Vamos começar
 
 Antes de começarmos a enviar requisições para a API primeiro temos que instalar as suas depedências.
@@ -106,6 +115,8 @@ Com src/database/index.js aberto, no seguinte trecho de codigo :
         }
     }
 ```
+
+Salve o arquivo e feche, não realize mais nenhum tipo de alteração.
 
 È possivel alterar a porta onde a API ficara visivel, onde:
   ```env
