@@ -118,7 +118,177 @@ A api irar responder as seguintes rotas.
     - `/partners/ID DO PARCEIRO`
     - `/patners/`
 
+Todas as rotas irão retornar um JSON contendo uma mensagem, os dados solicitados e o codigo de resposta>
 
+Por exemplo, veja o json retornado para a rota \partners\5efe73b9e30c6208b0f8875e
+
+```json
+{
+  "message": "Parceiro encontrado com sucesso!",
+  "partner": {
+    "_id": "5efe73b9e30c6208b0f8875e",
+    "tradingName": "Bar do teste",
+    "ownerName": "Usuario de teste",
+    "document": "73.068.991/0001-18",
+    "coverageArea": {
+      "coordinates": [
+        [
+          [
+            [
+              -38.6577,
+              -3.7753
+            ],
+            [
+              -38.63212,
+              -3.81418
+            ],
+            [
+              -38.61925,
+              -3.82873
+            ],
+            [
+              -38.59762,
+              -3.84004
+            ],
+            [
+              -38.58727,
+              -3.84345
+            ],
+            [
+              -38.58189,
+              -3.8442
+            ],
+            [
+              -38.57667,
+              -3.84573
+            ],
+            [
+              -38.56706,
+              -3.85015
+            ],
+            [
+              -38.56637,
+              -3.84937
+            ],
+            [
+              -38.56268,
+              -3.84286
+            ],
+            [
+              -38.56148,
+              -3.83772
+            ],
+            [
+              -38.55881,
+              -3.82411
+            ],
+            [
+              -38.55577,
+              -3.81507
+            ],
+            [
+              -38.55258,
+              -3.80674
+            ],
+            [
+              -38.54968,
+              -3.80222
+            ],
+            [
+              -38.53406,
+              -3.79495
+            ],
+            [
+              -38.52894,
+              -3.77718
+            ],
+            [
+              -38.52517,
+              -3.76313
+            ],
+            [
+              -38.53118,
+              -3.76203
+            ],
+            [
+              -38.53968,
+              -3.76126
+            ],
+            [
+              -38.54577,
+              -3.76151
+            ],
+            [
+              -38.55344,
+              -3.76102
+            ],
+            [
+              -38.56327,
+              -3.76029
+            ],
+            [
+              -38.58118,
+              -3.75907
+            ],
+            [
+              -38.60079,
+              -3.75423
+            ],
+            [
+              -38.60671,
+              -3.74772
+            ],
+            [
+              -38.61787,
+              -3.7431
+            ],
+            [
+              -38.62577,
+              -3.7472
+            ],
+            [
+              -38.63332,
+              -3.7496
+            ],
+            [
+              -38.65049,
+              -3.76057
+            ],
+            [
+              -38.6577,
+              -3.7753
+            ]
+          ]
+        ]
+      ],
+      "_id": "5efe73b9e30c6208b0f8875f",
+      "type": "MultiPolygon"
+    },
+    "address": {
+      "coordinates": [
+        -23.5035777,
+        -46.4155391
+      ],
+      "_id": "5efe73b9e30c6208b0f88760",
+      "type": "Point"
+    },
+    "__v": 0
+  },
+  "code": 200
+}
+```
+#### Explicando a estrutura da resposta
+
+Toda rota segue o mesmo padrão de resposta em caso de sucesso com a requisição, com essa resposta sendo um JSON com 3(trÊs) propriedades:
+    1. Message
+    2. Partner
+    3. Code
+    
+A primeira propriedade **Message**, contêm uma mensagem descrevendo o sucesso do que foi solicitado, por exemplo *Parceiro encontrado com sucesso*.
+
+A segundo propriedade **Partner**, contêm um objeto ou um array de objetos, esses objetos representam o parceiro solitado/encontrado, veja o exemplo acima.
+
+A terceira e ultima propriedade, representa o status da requisição seguindo o padrão do protocolo HTTP, mesmo que a requisição a API tenha sido efetuado com sucesso (200) caso o conteudo solicitado não seja encontrado o codigo (Code) retornado será de 404
     
 
 
