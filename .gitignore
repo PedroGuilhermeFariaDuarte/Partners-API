@@ -2,7 +2,7 @@
 node_modules
 
 # Tests
-__tests__
+
 
 # Build
 build

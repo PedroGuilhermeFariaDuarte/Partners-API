@@ -2,5 +2,5 @@ import App from './src/app';
 
 App.listen(process.env.API_HOST, () => {
     // eslint-disable-next-line no-console
-    console.log('API online!');
+    console.log('Partners API online!');
 });

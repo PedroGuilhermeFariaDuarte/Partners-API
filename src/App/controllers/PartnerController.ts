@@ -1,7 +1,5 @@
+// Models
 import PartnerModel from '../models/PartnerModel';
-
-// Utils
-import { PartnerValidaty } from '../../utils/schemas';
 
 // Types
 import { Request, Response } from 'express'
@@ -103,20 +101,11 @@ class Partnercontroller {
 
     async create(request: Request, response: Response) {
         try {
-            const schemaValid = await PartnerValidaty.isValid(
-                request.body
-            ).catch((error) => new Error(error.message));
-
-            if (!schemaValid) {
-                response.status(400).json(schemaValid);
-                return;
-            }
-
             const newPatner = await PartnerModel.create(request.body);
 
             if (!newPatner) {
                 response.status(500).json({
-                    message: 'Não foi possiver concluir o cadastro do parceiro',
+                    message: 'Não foi possivel concluir o cadastro do parceiro',
                     code: 500
                 });
             }
