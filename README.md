@@ -145,6 +145,16 @@ Para iniciar a API:
     yarn dev:server
 ```
 
+Para realizar um teste:
+```bash
+    yarn test
+```
+
+Para gerar uma build de produção:
+```bash
+    yarn dev:build
+```
+
 ### Rotas
 A api respondera as seguintes rotas.
 
