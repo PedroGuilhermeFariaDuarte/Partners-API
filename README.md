@@ -292,4 +292,11 @@ A segundo propriedade **Partner**, contêm um objeto ou um array de objetos, ess
 A terceira e ultíma propriedade, representa o status da requisição seguindo o padrão do protocolo HTTP, mesmo que a requisição a API tenha sido efetuado com sucesso (200) caso o conteudo solicitado não seja encontrado o codigo (Code) retornado será de 404.
     
 
+#### Enviando uma requisição para uma rota
+Para realizar uma requisição para a Partner API você pode usar o cliente **Insomnia**
 
+Neste repositorio você irar encontrar um arquivo JSON para importa dentro do insomnia, este json contêm as rotas e seus parametros pré-configurados.
+
+Caso nao queira usar o insomnia, fica a vontade para usar o cliente de sua preferencia.
+
+Fim
