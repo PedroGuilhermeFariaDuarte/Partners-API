@@ -334,7 +334,7 @@ A primeira propriedade **Message**, contêm uma mensagem descrevendo o sucesso d
 
 A segundo propriedade **Partner**, contêm um objeto ou um array de objetos, esses objetos representam o parceiro solitado/encontrado, veja o exemplo acima.
 
-A terceira e ultíma propriedade, representa o status da requisição seguindo o padrão do protocolo HTTP, mesmo que a requisição a API tenha sido efetuado com sucesso (200) caso o conteudo solicitado não seja encontrado o codigo (Code) retornado será de 404.
+A terceira e ultíma propriedade, representa o status da requisição seguindo o padrão do protocolo [HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status), mesmo que a requisição a API tenha sido efetuado com sucesso (200) caso o conteudo solicitado não seja encontrado o codigo (Code) retornado será de 404.
     
 
 #### Enviando uma requisição para uma rota
