@@ -140,6 +140,10 @@ personalizado pode ser feita manualmente.
 
 Abaixo você encontrará todas as informações necessarias para começar a usar a Partner API.
 
+Para iniciar a API:
+```bash
+    yarn dev:server
+```
 
 ### Rotas
 A api respondera as seguintes rotas.
