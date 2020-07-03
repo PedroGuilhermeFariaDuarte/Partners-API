@@ -82,7 +82,32 @@ os pares DATABASE_* recebem os dados de conexão com o servidor de banco de dado
   DATABASE_PORT = A porta de acesso ao servidor, por parão é 27017
   ```
 
-È possivel alterar o host onde a API irár rodar,onde:
+Caso você tenha configurado um usuario e senha, acesse a pasta **src**, vá para a pasta ***database** e abra o arquivo **index.js**
+
+Com src/database/index.js aberto, no seguinte trecho de codigo :
+
+```javascript
+    init() {
+        try {
+            mongoose.connect(`mongodb://${this.host}:${this.port}`, {
+                useNewUrlParser: true,
+                useFindAndModify: true,
+                useUnifiedTopology: true,
+                dbName: this.dbname,
+                /*
+                INSIRA AS SEGUINTES PROPRIEDADES:
+                user: this.username,
+                pass: this.password                
+                */
+            });
+        } catch (error) {
+            console.log(`Houve um erro ao tentar estabelecer uma conex~
+            ao com o banco de dados - erro: ${error.message}`);
+        }
+    }
+```
+
+È possivel alterar a porta onde a API ficara visivel, onde:
   ```env
        API_HOST = Insira a porta em que a API ficará acessivel, por padrão é na porta 3333 em localhost
   ``` 
