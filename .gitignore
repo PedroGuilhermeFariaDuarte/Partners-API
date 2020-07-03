@@ -1,0 +1,14 @@
+# Node
+node_modules
+
+# Tests
+__tests__
+
+# Build
+build
+
+# Yarn
+yarn.*
+
+# General Files
+*.txt
