@@ -38,10 +38,11 @@ export async function PartnerSchema(request: Request, response: Response, next: 
 export function PartnerBody(request: Request, response: Response, next: NextFunction) {
     try {
 
-        if (!request.body?.tradingName) {
+
+        if (!Object.keys(request.body).length) {
             response.status(400).json({
                 message: 'Os dados do parceiro não foram enviados',
-                code: 400
+                code: 400,
             });
 
             return;
