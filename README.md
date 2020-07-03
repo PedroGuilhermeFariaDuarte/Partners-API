@@ -104,6 +104,21 @@ Após o fim da instalação, se você desejar, certifique-se que o servidor de b
 
 Será salvo no banco de dados todos os registros necessarios para começar a testar a API, mas caso prefira, a inserção de um registro
 personalizado pode ser feita manualmente.
+
+
+# Como usar
+
+Abaixo você encontrará todas as informações necessarias para começar a usar a Partner API.
+
+
+### Rotas
+A api irar responder as seguintes rotas.
+
+    - `/partners/create`
+    - `/partners/ID DO PARCEIRO`
+    - `/patners/`
+
+
     
 
 
