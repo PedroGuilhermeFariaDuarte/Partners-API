@@ -4,8 +4,18 @@ Uma api para a busca de um parceiro ou para os parceiros mais proximos a você.
 
 ## Sobre
 
-A api "Partners" foi criada  para oferecer a qualquer 'client' uma respostada padronizada e um acesso bem simplificado, para que isso fosse possilve
-foi seguido alguns padrôe como o 'REST' por exemplo.
+A api "Partners" foi criada  para oferecer a qualquer cliente uma resposta padronizada e um acesso bem simplificado.
+-Encontre nossos parceiros
+-Feita para todos os clientes
+-Rapida
+
+### Funcionalidades suportadas ###
+- Informe a sua localização
+- Visuzalie todos os parceiros proximos a você de uma maneira extremanente rapida  
+- Procure por um parceiro em especifico
+
+
+#### Samples: ####
 
 
 ## Vamos começar
@@ -78,5 +88,14 @@ os pares DATABASE_* recebem os dados de conexão com o servidor de banco de dado
   DATABASE_HOST = O Host que o servidor está rodando, por padrão é no localhost/127.0.0.1
   DATABASE_PORT = A porta de acesso ao servidor, por parão é 27017
   ```
+
+È possivel alterar o host onde a API irár rodar,onde:
+  ```env
+       API_HOST = Insira a porta em que a API ficará acessivel, por padrão é na porta 3333 em localhost
+  ``` 
+
+Instalar as dependencias internas da API:
+
+    
 
 
