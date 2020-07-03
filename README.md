@@ -33,7 +33,7 @@ para todas as perguntas do chocolatey, responda com a letra 'Y'.
 Em um terminal de sua prefêrencia, aberto como adminstrador, digite o seguinte comando para instalar o **Node.js**:
 
   ```bash
-    choco install node:lts
+    choco install nodejs-lts
   ```
 
 após a instalação digite o seguinte comando para instalar o **Yarn**:
