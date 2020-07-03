@@ -1,10 +1,10 @@
 # Partners-API
 
-Uma api para a busca de um parceiro ou para os parceiros mais proximos a você.
+Procure por um parceiro de sua preferência ou mais próximo a você.
 
 ## Sobre
 
-A api "Partners" foi criada  para oferecer a qualquer cliente uma resposta padronizada e um acesso bem simplificado.
+O Partners API foi criado para oferecer a qualquer cliente uma resposta padronizada e um acesso bem simplificado.
 
 ### Funcionalidades suportadas ###
 - Informe a sua localização
@@ -22,52 +22,46 @@ A api "Partners" foi criada  para oferecer a qualquer cliente uma resposta padro
 
 # Vamos começar
 
-Antes de começarmos a enviar requisições para a API primeiro temos que instalar as suas depedências.
+Primeiro de tudo temos que instalar todas as dependências.
 
-No windows você pode usar o gerênciador de pacotes [Chocolatey](https://chocolatey.org/) para instalar quase todas as dependências!
+No windows você pode usar o gerênciador de pacotes [Chocolatey](https://chocolatey.org/) para instalar quase todas as dependências desta API!
 
-Caso você tenha optado pelo Chocolatey, segue o passo a passo :
+Caso você tenha optado pelo Chocolatey, segue o passo a passo:
 
- para as peguntas que o chocolatey for fazer, responda com a letra 'Y' em maiusculo.
+para todas as perguntas do chocolatey, responda com a letra 'Y'.
 
-No seu terminal de prefêrencia, aberto como adminstador
+Em um terminal de sua prefêrencia, aberto como adminstador, digite o seguinte comando para instalar o node:
 
-digite o seguinte comando para instalar o node:
   ```bash
     choco install node:lts
   ```
 
-agoro digite o seguinte comando para instalar o yarn:
+após a istalação digite o seguinte comando para instalar o yarn:
+
   ```bash
     choco install yarn
   ```
 
 Pronto, as intalações com o chocolatey chegou ao fim.
 
-Caso você tenha optado por instalar sem o Chocolatey, segue o link das dependências:
+Caso você tenha optado por instalar sem o Chocolatey, segue os link's das dependências:
 
   1. [Node.JS](https://nodejs.org/en/download/)
   2. [Yarn](https://classic.yarnpkg.com/en/docs/install/#windows-stable)
   
  #### Instalando o servidor de banco de dados
  
- Para realizar a instalação acesse [Este link](https://www.mongodb.com/try/download/community?tck=docs_server), você será redirecionado
- para pagina de instalação do MongoDB, durante a instalação o instalador irar pergunta como você deseja rodar o banco de dados, por padrão
- ele roda como um 'Serviço Windows' no S.O Windows, e sem usuario e senha, caso você opte por colocar usuario e senha anote esse dados, pois
- será necessario para que a API possar consultar os registros.
+ Para realizar a instalação do servidor acesse [Este link](https://www.mongodb.com/try/download/community?tck=docs_server), você será redirecionado para pagina de instalação do **MongoDB**, durante a instalação o instalador irar pergunta como você deseja rodar o banco de dados, por padrão ele roda como um 'Serviço Windows' no S.O **Windows**, o usuario e senha não são solicitados, caso você opte por colocar um usuário e senha, anote esse dados, pois serão necessarios para que a API possar se conectar no servidor.
  
- Com o servidor instalado, você pode usar a 'GUI'  [MongoDB Compass](https://www.mongodb.com/try/download/compass) para se conectar ao
- e visualizar todos os dados e realizar as operações de 'CRUD'.
+Com o servidor instalado, você pode usar a **GUI** [MongoDB Compass](https://www.mongodb.com/try/download/compass) para se conectar ao serviodr e visualizar todos os dados e realizar as operações de **CRUD** de uma maneira mais "amigavel".
  
- Caso tenha alguma duvida ou sofrido algum problema durante as instalações [Help](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
-
+Caso tenha alguma duvida ou sofrido algum problema durante as instalações [Help](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/).
 
 ### Configurando a API
 
-Agora que todas as dependencias foram instaladas, vamos configurar a API para que ela possa rodar e acessar o banco de dados corretamente.
+Agora que todas as dependências foram instaladas, vamos configurar a API para que ela possa rodar e acessar o banco de dados corretamente.
 
-Caso você ja tenha feito o clone deste projeto, na sua raiz, acesso o arquivo .env em uma IDE ou Editor de texto de sua preferência, recomendo o
-[Visual Studio Code](https://code.visualstudio.com/Download).
+Caso você já tenha feito o clone deste projeto, na sua raiz, acesse o arquivo **.env** em uma IDE ou Editor de texto de sua preferência, recomendo o [Visual Studio Code](https://code.visualstudio.com/Download).
 
 Com o arquivo .env aberto, você irar encontrar os seguintes pares chave/valor:
 ```env
@@ -91,7 +85,7 @@ os pares DATABASE_* recebem os dados de conexão com o servidor de banco de dado
   DATABASE_PORT = A porta de acesso ao servidor, por parão é 27017
   ```
 
-Caso você tenha configurado um usuario e senha, acesse a pasta **src**, vá para a pasta ***database** e abra o arquivo **index.js**
+Caso você tenha configurado um usuário e senha, acesse a pasta **src**, vá para a pasta ***database** e abra o arquivo **index.js**
 
 Com src/database/index.js aberto, no seguinte trecho de codigo :
 
@@ -123,7 +117,7 @@ Salve o arquivo e feche, não realize mais nenhum tipo de alteração.
        API_HOST = Insira a porta em que a API ficará acessivel, por padrão é na porta 3333 em localhost
   ``` 
 
-#### Instalando as depedencias internas da API:
+#### Instalando as dependências internas da API:
 
 Para realizar as demais instalações vamos acessar a raiz da pasta por um terminal de sua preferência.
 
