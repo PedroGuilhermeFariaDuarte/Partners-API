@@ -154,6 +154,7 @@ Para gerar uma build de produção:
 ```bash
     yarn dev:build
 ```
+**Após finalizado o build, copie o arquivo *.env* para a raiz da pasta build**
 
 ### Rotas
 A api respondera as seguintes rotas.
