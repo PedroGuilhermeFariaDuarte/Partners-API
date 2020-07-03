@@ -8,7 +8,7 @@ O Partners API foi criado para oferecer a qualquer cliente uma resposta padroniz
 
 ### Funcionalidades suportadas ###
 - Informe a sua localização
-- Visuzalie todos os parceiros proximos a você de uma maneira extremanente rapida  
+- Visualize todos os parceiros proximos a você de maneira extremanente rapida  
 - Procure por um parceiro em especifico
 
 ### Tecnologias utilzadas ###
@@ -26,17 +26,17 @@ Primeiro de tudo temos que instalar todas as dependências.
 
 No windows você pode usar o gerênciador de pacotes [Chocolatey](https://chocolatey.org/) para instalar quase todas as dependências desta API!
 
-Caso você tenha optado pelo Chocolatey, segue o passo a passo:
+Caso você tenha optado pelo **Chocolatey**, segue o passo a passo:
 
 para todas as perguntas do chocolatey, responda com a letra 'Y'.
 
-Em um terminal de sua prefêrencia, aberto como adminstador, digite o seguinte comando para instalar o node:
+Em um terminal de sua prefêrencia, aberto como adminstrador, digite o seguinte comando para instalar o **Node.js**:
 
   ```bash
     choco install node:lts
   ```
 
-após a istalação digite o seguinte comando para instalar o yarn:
+após a instalação digite o seguinte comando para instalar o **Yarn**:
 
   ```bash
     choco install yarn
@@ -51,7 +51,7 @@ Caso você tenha optado por instalar sem o Chocolatey, segue os link's das depen
   
  #### Instalando o servidor de banco de dados
  
- Para realizar a instalação do servidor acesse [Este link](https://www.mongodb.com/try/download/community?tck=docs_server), você será redirecionado para pagina de instalação do **MongoDB**, durante a instalação o instalador irar pergunta como você deseja rodar o banco de dados, por padrão ele roda como um 'Serviço Windows' no S.O **Windows**, o usuario e senha não são solicitados, caso você opte por colocar um usuário e senha, anote esse dados, pois serão necessarios para que a API possar se conectar no servidor.
+ Para realizar a instalação do servidor acesse [Este link](https://www.mongodb.com/try/download/community?tck=docs_server), você será redirecionado para pagina de instalação do **MongoDB**, durante a instalação o instalador ira pergunta como você deseja rodar o banco de dados, por padrão ele roda como um 'Serviço Windows' no S.O **Windows**, o usuario e senha não são solicitados, caso você opte por colocar um usuário e senha, anote esses dados, pois serão necessarios para que a API possar se conectar no servidor.
  
 Com o servidor instalado, você pode usar a **GUI** [MongoDB Compass](https://www.mongodb.com/try/download/compass) para se conectar ao serviodr e visualizar todos os dados e realizar as operações de **CRUD** de uma maneira mais "amigavel".
  
@@ -76,13 +76,13 @@ Com o arquivo .env aberto, você irar encontrar os seguintes pares chave/valor:
   DATABASE_PORT = 27017
 ```
 
-os pares DATABASE_* recebem os dados de conexão com o servidor de banco de dados onde:
+os pares DATABASE_* recebem os dados de conexão com o servidor de banco de dados, onde:
   ```env
   DATABASE_USERNAME = Caso você tenha configurado um usuario, insira o usuario aqui
   DATABASE_PASSWORD = Caso você tenha configurado uma sennha, insira a senha aqui
   DATABASE_NAME = Nome do banco de dados de sua prefêrencia
   DATABASE_HOST = O Host que o servidor está rodando, por padrão é no localhost/127.0.0.1
-  DATABASE_PORT = A porta de acesso ao servidor, por parão é 27017
+  DATABASE_PORT = A porta de acesso ao servidor, por padrão é 27017
   ```
 
 Caso você tenha configurado um usuário e senha, acesse a pasta **src**, vá para a pasta ***database** e abra o arquivo **index.js**
@@ -112,7 +112,7 @@ Com src/database/index.js aberto, no seguinte trecho de codigo :
 
 Salve o arquivo e feche, não realize mais nenhum tipo de alteração.
 
-È possivel alterar a porta onde a API ficara visivel, onde:
+È possivel alterar a porta onde a API ficará visivel, onde:
   ```env
        API_HOST = Insira a porta em que a API ficará acessivel, por padrão é na porta 3333 em localhost
   ``` 
@@ -142,7 +142,7 @@ Abaixo você encontrará todas as informações necessarias para começar a usar
 
 
 ### Rotas
-A api irar responder as seguintes rotas.
+A api respondera as seguintes rotas.
 
     - `/partners/create`
     - `/partners/ID DO PARCEIRO`
@@ -309,7 +309,7 @@ Por exemplo, veja o json retornado para a rota \partners\5efe73b9e30c6208b0f8875
 ```
 #### Explicando a estrutura da resposta
 
-Toda rota segue o mesmo padrão de resposta em caso de sucesso com a requisição, com essa resposta sendo um JSON com 3(trÊs) propriedades:
+Toda rota segue o mesmo padrão de resposta em caso de sucesso com a requisição, com essa resposta sendo um JSON com 3(três) propriedades:
 
     1. Message
     2. Partner
@@ -325,7 +325,7 @@ A terceira e ultíma propriedade, representa o status da requisição seguindo o
 #### Enviando uma requisição para uma rota
 Para realizar uma requisição para a Partner API você pode usar o cliente **Insomnia**
 
-Neste repositorio você irar encontrar um arquivo JSON para importa dentro do insomnia, este json contêm as rotas e seus parametros pré-configurados.
+Neste repositório você encontrara um arquivo JSON para importar dentro do insomnia, este json contêm as rotas e seus parametros pré-configurados.
 
 Caso nao queira usar o insomnia, fica a vontade para usar o cliente de sua preferencia.
 
