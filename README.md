@@ -53,7 +53,7 @@ Caso você tenha optado por instalar sem o Chocolatey, segue os link's das depen
  
  Para realizar a instalação do servidor acesse [Este link](https://www.mongodb.com/try/download/community?tck=docs_server), você será redirecionado para pagina de instalação do **MongoDB**, durante a instalação o instalador ira pergunta como você deseja rodar o banco de dados, por padrão ele roda como um 'Serviço Windows' no S.O **Windows**, o usuario e senha não são solicitados, caso você opte por colocar um usuário e senha, anote esses dados, pois serão necessarios para que a API possar se conectar no servidor.
  
-Com o servidor instalado, você pode usar a **GUI** [MongoDB Compass](https://www.mongodb.com/try/download/compass) para se conectar ao serviodr e visualizar todos os dados e realizar as operações de **CRUD** de uma maneira mais "amigavel".
+Com o servidor instalado, você pode usar a **GUI** [MongoDB Compass](https://www.mongodb.com/try/download/compass) para se conectar ao serviodr e visualizar todos os dados e realizar as operações de **CRUD** de uma maneira mais amigavel.
  
 Caso tenha alguma duvida ou sofrido algum problema durante as instalações [Help](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/).
 
@@ -61,9 +61,9 @@ Caso tenha alguma duvida ou sofrido algum problema durante as instalações [Hel
 
 Agora que todas as dependências foram instaladas, vamos configurar a API para que ela possa rodar e acessar o banco de dados corretamente.
 
-Caso você já tenha feito o clone deste projeto, na sua raiz, acesse o arquivo **.env** em uma IDE ou Editor de texto de sua preferência, recomendo o [Visual Studio Code](https://code.visualstudio.com/Download).
+Caso você já tenha feito o clone deste projeto, na raiz da pasta, acesse o arquivo **.env** em uma IDE ou Editor de texto de sua preferência, recomendo o [Visual Studio Code](https://code.visualstudio.com/Download).
 
-Com o arquivo .env aberto, você irar encontrar os seguintes pares chave/valor:
+Com o arquivo .env aberto, você irar encontrar os seguintes pares *chave=valor*:
 ```env
   # API
   API_HOST = 3333
@@ -85,9 +85,9 @@ os pares DATABASE_* recebem os dados de conexão com o servidor de banco de dado
   DATABASE_PORT = A porta de acesso ao servidor, por padrão é 27017
   ```
 
-Caso você tenha configurado um usuário e senha, acesse a pasta **src**, vá para a pasta ***database** e abra o arquivo **index.js**
+Caso você tenha configurado um usuário e senha, acesse a pasta **src**, vá para a pasta **database** e abra o arquivo **index.js**
 
-Com src/database/index.js aberto, no seguinte trecho de codigo :
+Com **src/database/index.js** aberto, no seguinte trecho de codigo :
 
 ```javascript
     init() {
@@ -110,7 +110,7 @@ Com src/database/index.js aberto, no seguinte trecho de codigo :
     }
 ```
 
-Salve o arquivo e feche, não realize mais nenhum tipo de alteração.
+**Salve o arquivo e feche, não realize mais nenhum tipo de alteração**.
 
 È possivel alterar a porta onde a API ficará visivel, onde:
   ```env
@@ -161,9 +161,9 @@ A api respondera as seguintes rotas.
 
     - `/partners/create`
     - `/partners/ID DO PARCEIRO`
-    - `/patners/`
+    - `/partners/`
 
-Todas as rotas irão retornar um JSON contendo uma mensagem, os dados solicitados e o codigo de resposta>
+Todas as rotas irão retornar um JSON contendo uma mensagem, os dados solicitados e o codigo de resposta.
 
 Por exemplo, veja o json retornado para a rota \partners\5efe73b9e30c6208b0f8875e
 
