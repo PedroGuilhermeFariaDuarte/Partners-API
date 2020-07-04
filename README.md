@@ -159,9 +159,9 @@ Para gerar uma build de produção:
 ### Rotas
 A api respondera as seguintes rotas.
 
-    - `/partners/create`
-    - `/partners/ID DO PARCEIRO`
-    - `/partners/`
+    - **POST** `/partners/create`
+    - **GET** `/partners/ID DO PARCEIRO`
+    - **GET** `/partners/`
 
 Todas as rotas irão retornar um JSON contendo uma mensagem, os dados solicitados e o codigo de resposta.
 
