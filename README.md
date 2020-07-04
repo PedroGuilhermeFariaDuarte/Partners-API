@@ -159,9 +159,9 @@ Para gerar uma build de produção:
 ### Rotas
 A api respondera as seguintes rotas.
 
-    - **POST** `/partners/create`
-    - **GET** `/partners/ID DO PARCEIRO`
-    - **GET** `/partners/`
+    - POST: `/partners/create`
+    - GET: `/partners/ID DO PARCEIRO`
+    - GET: `/partners/`
 
 Todas as rotas irão retornar um JSON contendo uma mensagem, os dados solicitados e o codigo de resposta.
 
@@ -343,5 +343,46 @@ Para realizar uma requisição para a Partner API você pode usar o cliente **In
 Neste repositório você encontrara um arquivo JSON (**partner_api_routes**) para importar dentro do insomnia, este json contêm as rotas e seus parametros pré-configurados.
 
 Caso nao queira usar o insomnia, fica a vontade para usar o cliente de sua preferencia.
+
+Para a rota **/partners/create**, você prcesia enviar no *body* da requisição um JSON contendo a seguinte estrutura:
+
+```json
+  {
+    "tradingName": "Nome do estabelecimento",
+    "ownerName": "Nome do dono do estabelecimento",
+    "document": "CNPJ do dono",
+    "coverageArea": {
+      "coordinates": [
+        [
+          [
+            [
+              Longitude,
+              Latitude
+            ],            
+          ]
+        ]
+      ],      
+      "type": "MultiPolygon"
+    },
+    "address": {
+     "type": "Point",
+      "coordinates": [
+        Longitude,
+        Latitude
+      ]
+     }
+  }
+```
+
+Para a rota **/partners/**, você prcesia enviar no *body* da requisição um JSON contendo a seguinte estrutura:
+
+```json
+    {
+        "coordinates": [
+            Longitude,
+            Latitude
+          ]
+    }
+```
 
 **Zé Delivery - Backend Challenge**
