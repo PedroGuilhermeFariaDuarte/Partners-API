@@ -53,7 +53,7 @@ Caso você tenha optado por instalar sem o Chocolatey, segue os link's das depen
  
  Para realizar a instalação do servidor acesse [Este link](https://www.mongodb.com/try/download/community?tck=docs_server), você será redirecionado para pagina de instalação do **MongoDB**, durante a instalação o instalador ira pergunta como você deseja rodar o banco de dados, por padrão ele roda como um 'Serviço Windows' no S.O **Windows**, o usuario e senha não são solicitados, caso você opte por colocar um usuário e senha, anote esses dados, pois serão necessarios para que a API possar se conectar no servidor.
  
-Com o servidor instalado, você pode usar a **GUI** [MongoDB Compass](https://www.mongodb.com/try/download/compass) para se conectar ao serviodr e visualizar todos os dados e realizar as operações de **CRUD** de uma maneira mais amigavel.
+Com o servidor instalado, você pode usar a **GUI** [MongoDB Compass](https://www.mongodb.com/try/download/compass) para se conectar ao servidor e visualizar todos os dados e realizar as operações de **CRUD** de uma maneira mais amigavel.
  
 Caso tenha alguma duvida ou sofrido algum problema durante as instalações [Help](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/).
 
@@ -344,4 +344,4 @@ Neste repositório você encontrara um arquivo JSON (**partner_api_routes**) par
 
 Caso nao queira usar o insomnia, fica a vontade para usar o cliente de sua preferencia.
 
-Fim
+**Zé Delivery - Backend Challenge**
